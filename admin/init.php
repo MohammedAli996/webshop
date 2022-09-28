@@ -4,10 +4,8 @@ include 'connect.php';
 $tpl = 'includes/templetes/'; // Template Directory
 $en = 'includes/lang/'; // languages Directory
 $css = 'layout/css/'; // Css Directory
-$csss = 'includes/templetes/'; // Css Directory
 $img = 'layout/img/'; // languages Directory
 $js = 'layout/js/'; // Js Directory
-$jss = 'includes/templetes/'; // Js Directory
 $func = 'includes/functions/'; //Functions Directory
 
 // Includ The Important Files 
