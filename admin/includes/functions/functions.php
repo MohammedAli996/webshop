@@ -78,3 +78,22 @@ function checkItem($select, $from, $value){
     return $count;
 
 }
+
+/*
+ ** Count Number OF Item Function V 1.0
+ ** Function To Count Number of Item row[ Function Accept Parameters]
+ ** $item = The Item To Count
+ ** $table = The Table to Choose From
+ **
+ */
+
+function countItems($item, $table){
+
+    global $con;
+
+    $stmt2 = $con->prepare("SELECT COUNT($item) FROM $table");
+
+    $stmt2->execute();
+
+    return $stmt2->fetchColumn();
+}

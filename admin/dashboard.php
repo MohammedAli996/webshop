@@ -9,30 +9,29 @@ if (isset($_SESSION['Username'])) {
 
     /* Start Dashboard Page */
 
+    $stmt2 = $con->prepare("SELECT COUNT(UserID) FROM users");
+
+    $stmt2->execute();
+
+
 ?>
     <div class="container home-stats text-center">
         <h1>Dashboard</h1>
         <div class="row">
             <div class="col-md-3">
-                <div class="stat">
+                <div class="stat st-members">
                     Total Members
-                    <span>200</span>
+                    <span><a href="user.php"><?php echo countItems('UserID', 'users') ?></a></span>
                 </div>
             </div>
             <div class="col-md-3">
-                <div class="stat">
-                    Pending Members
-                    <span>25</span>
-                </div>
-            </div>
-            <div class="col-md-3">
-                <div class="stat">
+                <div class="stat st-items">
                     Total Items
                     <span>1500</span>
                 </div>
             </div>
             <div class="col-md-3">
-                <div class="stat">
+                <div class="stat st-comments">
                     Total Comments
                     <span>3500</span>
                 </div>

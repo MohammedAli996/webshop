@@ -17,22 +17,21 @@ body {
     width: 300px;
     margin: 100px auto;
 }
+.login .text-center {
+    color: white;
+}
 
-    .login .text-center {
-        color: white;
-    }
+.login input {
+   margin-bottom: 10px;
+}
 
-    .login input {
-        margin-bottom: 10px;
-    }
+.login .form-control {
+    background-color: #EAEAEA;
+}
 
-    .login .form-control {
-        background-color: #EAEAEA;
-    }
-
-    .login .btn {
-        background-color: #008dde;
-    }
+.login .btn {
+    background-color: #008dde;
+}
 /*! End Login Form */
 
 /*! Start Bootstrap Edits */
@@ -65,16 +64,16 @@ body {
     border: none;
 }
 
-    .dropdown-menu > li > a {
-        color: #fff;
-        padding: 10px 15px;
-    }
+.dropdown-menu > li > a {
+     color: #fff;
+     padding: 10px 15px;
+}
 
-        .dropdown-menu > li > a:focus,
-        .dropdown-menu > li > a:hover {
-            color: #fff;
-            background-color: #8e44ab;
-        }
+.dropdown-menu > li > a:focus,
+.dropdown-menu > li > a:hover {
+     color: #fff;
+     background-color: #8e44ab;
+}
 
 .form-control {
     position: relative;
@@ -82,20 +81,35 @@ body {
 /*! End Bootstrap Edits */
 
 /*! Start Dashboard page */
-.home-stats .stat{
-    background-color: #eee;
-    border: 1px solid #ccc;
+.home-stats .stat {
     padding: 20px;
-    font-size:15px;
-
+    font-size: 15px;
+    color: #fff;
+    border-radius: 10px;
 }
-
+.home-stats .stat a{
+    color: #fff;
+}
+.home-stats .stat a:hover{
+    text-decoration: none;
+}
 .home-stats .stat span {
-        display: block;
-        font-size: 50px;
+    display: block;
+    font-size: 60px;
 }
 
-.latest{
+.home-stats .st-members {
+    background-color: #3498db;
+}
+
+.home-stats .st-items {
+    background-color: #e67e22;
+}
+
+.home-stats .st-comments {
+    background-color: #8e44ad;
+}
+.latest {
     margin-top: 30px;
 }
 /*! end Dashboard page */
