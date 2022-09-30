@@ -112,8 +112,24 @@ body {
 .latest {
     margin-top: 30px;
 }
-/*! end Dashboard page */
 
+.latest-users {
+    margin-bottom: 0;
+    overflow: hidden;
+}
+
+.latest-users li {
+    padding: 5px 0;
+    overflow: hidden;
+}
+.latest-users li:nth-child(even){
+    background-color: #EEE;
+}
+.latest-users .btn-success {
+    padding: 3px 8px;
+}
+
+/*! end Dashboard page */
 /*! Start Member page */
 h1 {
     font-size: 55px;

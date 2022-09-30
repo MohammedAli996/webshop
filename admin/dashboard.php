@@ -9,10 +9,9 @@ if (isset($_SESSION['Username'])) {
 
     /* Start Dashboard Page */
 
-    $stmt2 = $con->prepare("SELECT COUNT(UserID) FROM users");
+    $latesusers = 3; //$latesuser = Number Of Records To Get
 
-    $stmt2->execute();
-
+   $thelatest = getLatest("*", "users", "UserID", $latesusers); // latest User Array
 
 ?>
     <div class="container home-stats text-center">
@@ -44,17 +43,23 @@ if (isset($_SESSION['Username'])) {
                 <div class="col-sm-6">
                     <div class="panel panel-default">
                         <div class="panel-heading">
-                            <i class="fa fa-users"></i> latest Registed Users
+                            <i class="fa fa-users"></i> latest <?php echo $latesusers ?> Registed Users
                         </div>
                         <div class="panel-body">
-                            Test
+                            <ul class"list-unstyled latest-users">
+                                <?php
+                                        foreach ($thelatest as $user){
+                                            echo '<li>' . $user['Username'] . '<span class="btn btn-success pull-right"><i class="fa fa-edit"></i>Edit</span></li>';
+                                        }
+                                ?>
+                            </ul>
                         </div>
                     </div>
                 </div>
                 <div class="col-sm-6">
                     <div class="panel panel-default">
                         <div class="panel-heading">
-                            <i class="fa fa-tag"></i> latest Items 
+                            <i class="fa fa-tag"></i> latest Items
                         </div>
                         <div class="panel-body">
                             Test
@@ -63,7 +68,7 @@ if (isset($_SESSION['Username'])) {
                 </div>
             </div>
         </div>
-  </div>  
+  </div>
     <?php
 
     /* End Dashboard Page */

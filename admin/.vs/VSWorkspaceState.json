@@ -1,6 +1,11 @@
 {
   "ExpandedNodes": [
-    ""
+    "",
+    "\\includes",
+    "\\includes\\templetes",
+    "\\layout",
+    "\\layout\\css"
   ],
+  "SelectedNode": "\\dashboard.php",
   "PreviewInSolutionExplorer": false
 }
