@@ -46,7 +46,7 @@ if (isset($_SESSION['Username'])) {
                             <i class="fa fa-users"></i> latest <?php echo $latesusers ?> Registed Users
                         </div>
                         <div class="panel-body">
-                            <ul class"list-unstyled latest-users">
+                            <ul class="list-unstyled latest-users">
                                 <?php
                                         foreach ($thelatest as $user){
                                             echo '<li>' . $user['Username'] . '<span class="btn btn-success pull-right"><i class="fa fa-edit"></i>Edit</span></li>';
